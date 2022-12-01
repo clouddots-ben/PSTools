@@ -8,6 +8,9 @@ $Functions = Join-Path -Path $ModuleFolder -ChildPath 'functions'
 $Script:ModuleFiles = @(
     $(Join-Path -Path $functions -ChildPath 'Get-Speedtest.ps1')
     $(Join-Path -Path $functions -ChildPath 'Get-ExternalIp.ps1')
+    $(Join-Path -Path $functions -ChildPath 'Get-CaffeineStatus.ps1')
+    $(Join-Path -Path $functions -ChildPath 'Start-Caffeine.ps1')
+    $(Join-Path -Path $functions -ChildPath 'Stop-Caffeine.ps1')
 )
 
 # Write-Information -MessageData $($ModuleFiles -join ';') -InformationAction Continue

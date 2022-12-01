@@ -1,22 +1,22 @@
-function Start-Caffeine {
+function Stop-Caffeine {
     $AlreadyRunningCheck = if (Get-Process | Where-Object -Property ProcessName -EQ "caffeine64") { $true }else { $false }
     switch ($AlreadyRunningCheck) {
         $true {
-            Write-Host "Aleady Caffeinated" -ForegroundColor Green
-        }
-        $false {
             $Path = $PSScriptRoot.Substring(0, $PSScriptRoot.Length - 10)
             $Run = Join-Path -Path $Path -ChildPath "caffeine64.exe"
-            & $Run 300 -noicon -notwhenlocked
+            & $Run -appexit
             $ProcessC = if (Get-Process | Where-Object -Property ProcessName -EQ "caffeine64") { $true }else { $false }
             switch ($ProcessC) {
                 $true {
-                    Write-Host "Caffeinated!" -ForegroundColor Green
+                    Write-Host "Decaf!" -ForegroundColor Green
                 }
                 $false {
-                    Write-Host "Still Decaf" -ForegroundColor Red
+                    Write-Host "Still wired!" -ForegroundColor Red
                 }
             }
+        }
+        $false {
+            Write-Host "Been decaf for a while" -ForegroundColor Red
         }
     }
 }
