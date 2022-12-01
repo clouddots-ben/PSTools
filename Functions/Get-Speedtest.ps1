@@ -39,7 +39,7 @@ function Get-Speedtest {
             $param
         }
         $false {
-            & $speedtestRun
+            & $Run
         }
 
     }
