@@ -18,7 +18,7 @@ function Get-Speedtest {
         [Parameter()][Switch]$PSObject
     )
     $Path = $PSScriptRoot.Substring(0, $PSScriptRoot.Length - 10)
-    $Run = Join-Path -Path $Path -ChildPath "speedtest.exe"
+    $Run = Join-Path -Path $Path -ChildPath "Executables\speedtest.exe"
     switch ($PSObject) {
         $true {
             $speedtest = & $Run -f csv
