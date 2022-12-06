@@ -11,6 +11,7 @@ $Script:ModuleFiles = @(
     $(Join-Path -Path $functions -ChildPath 'Get-CaffeineStatus.ps1')
     $(Join-Path -Path $functions -ChildPath 'Start-Caffeine.ps1')
     $(Join-Path -Path $functions -ChildPath 'Stop-Caffeine.ps1')
+    $(Join-Path -Path $functions -ChildPath 'Set-BasicProfile.ps1')
 )
 
 # Write-Information -MessageData $($ModuleFiles -join ';') -InformationAction Continue
