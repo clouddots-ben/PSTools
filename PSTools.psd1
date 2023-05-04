@@ -79,6 +79,8 @@
         'Get-Speedtest'
         'Get-ExternalIp'
         'Get-CaffeineStatus'
+        'Get-FolderSize'
+        'Show-Spinner'
         'Start-Caffeine'
         'Stop-Caffeine'
         'Set-BasicProfile'
