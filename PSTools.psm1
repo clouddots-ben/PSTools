@@ -6,6 +6,7 @@ $Functions = Join-Path -Path $ModuleFolder -ChildPath 'functions'
 # Write-Information -MessageData "Functions Path  = $Functions" -InformationAction Continue
 
 $Script:ModuleFiles = @(
+    $(Join-Path -Path $functions -ChildPath 'Get-RealCopy.ps1')
     $(Join-Path -Path $functions -ChildPath 'Get-Speedtest.ps1')
     $(Join-Path -Path $functions -ChildPath 'Get-ExternalIp.ps1')
     $(Join-Path -Path $functions -ChildPath 'Get-CaffeineStatus.ps1')
