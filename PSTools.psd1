@@ -76,6 +76,7 @@
 
     # Variables to export from this module
     VariablesToExport = @(
+        'Get-CommaSeparation'
         'Get-RealCopy'
         'Get-Speedtest'
         'Get-ExternalIp'
