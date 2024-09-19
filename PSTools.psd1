@@ -76,6 +76,7 @@
 
     # Variables to export from this module
     VariablesToExport = @(
+        'Compare-ComplexObject'
         'Get-CommaSeparation'
         'Get-RealCopy'
         'Get-Speedtest'
